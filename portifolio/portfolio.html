@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <div class="navbar bg-base-200 glass w-full px-4 py-2 shadow-lg fixed top-0 z-50">
+
+
+        <div class="navbar-start">
+            <a
+                class="btn btn-ghost text-xl hover:scale-105 hover:text-primary transition duration-700 ease-in-out">M.S</a>
+        </div>
+
+
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-lg">
+                <li><a class="hover:text-primary hover:scale-105 transition duration-700">Home</a></li>
+                <li><a class="hover:text-primary hover:scale-105 transition duration-700">About</a></li>
+                <li><a class="hover:text-primary hover:scale-105 transition duration-700">Experiences</a></li>
+                <li><a class="hover:text-primary hover:scale-105 transition duration-700">Projects</a></li>
+                <li><a class="hover:text-primary hover:scale-105 transition duration-700">Contact</a></li>
+            </ul>
+        </div>
+
+
+
+        <div class="navbar-end flex items-center gap-3">
+
+
+            <label class="swap swap-rotate hover:scale-110 transition duration-700">
+
+                <input type="checkbox" class="theme-controller" value="synthwave" />
+
+
+                <svg class="swap-off h-10 w-10 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                        d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
+                </svg>
+
+
+                <svg class="swap-on h-10 w-10 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                        d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
+                </svg>
+            </label>
+
+
+            <div class="dropdown lg:hidden">
+                <label class="btn btn-circle swap swap-rotate">
+
+                    <input type="checkbox" />
+
+
+                    <svg class="swap-off fill-current hover:scale-110 hover:color-primary transition duration-300"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+                    </svg>
+
+
+                    <svg class="swap-on fill-current hover:scale-110 hover:color-primary transition duration-300"
+                        xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+                        <polygon
+                            points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+                    </svg>
+                </label>
+                <ul tabindex="0 ,1"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 right-0">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="relative w-full min-h-screen flex flex-col justify-center items-center text-center mt-20"
+        style="background-image: url('/image (4).jpg'); background-size: cover; background-position: center;">
+
+
+        <div class="absolute inset-0 bg-black/50"></div>
+
+
+        <div class="relative z-10 p-5 flex flex-col justify-center items-center gap-4 mt-10">
+
+            <h2 class="text-7xl text-gray-100 delay-500 mt-10">Hello, I'm</h2>
+            <h1 class="text-8xl font-bold text-white ">Mohamed</h1>
+            <h1 class="text-8xl font-bold text-white">Siam</h1>
+            <h2 class="text-7xl text-gray-200 animate-pulse delay-500">Full Stack .NET Developer</h2>
+
+
+            <div class="flex items-center gap-4 mt-6 text-gray-200 animate-bounce">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="w-10 h-10 text-primary">
+                    <path fill-rule="evenodd"
+                        d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                        clip-rule="evenodd" />
+                </svg>
+                <span class="text-4xl font-semibold">Ismailia, Egypt</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div
+        class="w-full  flex flex-col justify-center items-center text-center p-10 hover:scale-105 transition duration-500">
+
+        <!-- Section Title -->
+        <h1 class="text-6xl font-bold mb-6 text-primary animate-fadeIn">About Me</h1>
+
+        <!-- About Me Text -->
+        <p class="text-4xl max-w-4xl  delay-500 mb-10    ">
+            I'm a passionate Full Stack .NET Developer with strong skills in C#, ASP.NET,
+            JavaScript, and modern web technologies. I love creating responsive and dynamic
+            web applications, and I enjoy learning new tools and frameworks to improve my
+            development workflow. My goal is to deliver clean, efficient, and scalable code.
+        </p>
+
+
+
+
+    </div>
+    <div
+        class="p-5 bg-base-200 shadow-xlg text-center w-full min-h-screen flex flex-col justify-center items-center gap-4  ">
+        <!-- Section Title -->
+        <h1 class="text-6xl font-bold text-primary animate-fadeIn">My Projects</h1>
+        <h2 class="text-2xl  delay-500">A selection of my recent work showcasing diverse projects.</h2>
+
+        <!-- Cards Container -->
+        <div class="flex flex-wrap justify-center gap-10 mt-10">
+            <!-- Card 1 -->
+            <div
+                class="card bg-base-100 w-96 shadow-sm transform transition duration-500 hover:scale-105 hover:border-2 hover:border-primary ">
+                <figure>
+                    <img src="/1024.png" alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">
+                        غrdk
+
+                    </h2>
+                    <p>E-commerce platform for selling and buying handmade products.</p>
+                    <div class="card-actions justify-center">
+                        <div class="badge badge-outline">Fashion</div>
+                        <div class="badge badge-outline">Products</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+                class="card bg-base-100 w-96 shadow-sm transform transition duration-500 hover:scale-105 hover:border-2 hover:border-primary">
+                <figure>
+                    <img src="/siam-sport-high-resolution-logo.png" alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">
+                        SiamSport
+
+                    </h2>
+                    <p>E-commerce platform for selling and buying sports equipment.</p>
+                    <div class="card-actions justify-center">
+                        <div class="badge badge-outline">Fashion</div>
+                        <div class="badge badge-outline">Products</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="relative w-full min-h-screen flex flex-col justify-center items-center text-center p-10
+bg-[url('/unnamed.webp')] bg-cover bg-center bg-no-repeat">
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/60"></div>
+
+
+        <div class="relative z-10 max-w-5xl text-white">
+
+            <!-- Section Title -->
+            <h1 class="text-6xl font-bold mb-6 text-primary animate-fadeIn hover:scale-150 transition duration-500">
+                where am i now ?
+            </h1>
+
+            <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+
+                <!-- 2024 -->
+                <li>
+                    <div class="timeline-middle">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="timeline-start mb-10 md:text-end hover:text-gray-300 transition duration-500">
+                        <time class="font-mono italic">2024</time>
+                        <div class="text-lg font-black">gradiuation</div>
+                        I have graduated from the University of Suez Canal with a Bachelor of Computer Science. I have
+                        graduated with good degrees and with an excellent grade in my graduation project. I have also
+                        completed my internship in the field of computer science and have gained valuable experience in
+                        the field of computer science.
+                    </div>
+                    <hr class="bg-white/40" />
+                </li>
+
+                <!-- 2025 -->
+                <li>
+                    <div class="timeline-middle">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="timeline-end mb-10 md:text-start hover:text-gray-300 transition duration-500">
+                        <time class="font-mono italic">2025</time>
+                        <div class="text-lg font-black">Army service</div>
+                        I have served in the army for 1 year and I have gained a lot of experience in the field of army
+                        service. I have also gained a lot of experience in the field of computer science during my army
+                        service. I have completed my army service with good grades.
+                    </div>
+                    <hr class="bg-white/40" />
+                </li>
+
+                <!-- 2026 -->
+                <li>
+                    <div class="timeline-middle">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="timeline-start mb-10 md:text-end  hover:text-gray-300 transition duration-500">
+                        <time class="font-mono italic ">2026</time>
+                        <div class="text-lg font-black">ITI scholarship</div>
+                        Now I am a scholarship student in ITI and I am learning a lot of new technologies and gaining a
+                        lot of experience in the field of computer science. I am also working on some projects and
+                        learning more technologies.
+                    </div>
+                    <hr class="bg-white/40" />
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+
+
+    <div
+        class="p-5 bg-base-200 shadow-xlg text-center w-full  flex flex-col justify-center items-center gap-4 hover:scale-105 transition duration-500  ">
+        <!-- Section Title -->
+        <h1 class="text-6xl font-bold text-primary animate-fadeIn">Technical Skills</h1>
+        <h2 class="text-2xl  delay-500">Proficient in modern web technologies and programming languages</h2>
+        <div class="flex flex-wrap justify-center gap-10 mt-10">
+            <!-- Card 1 -->
+            <div
+                class="card bg-base-100 image-full w-96 shadow-sm transform transition duration-500 hover:scale-105 hover:border-2 hover:border-primary">
+
+                <figure>
+                    <img src="/1--1-.avif" alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">💻
+                        Programming Languages</h2>
+                    <p>Proficient in multiple paradigms including OOP, functional, and procedural programming</p>
+                    <div class="card-actions justify-center">
+                        <div class="badge badge-outline">javascript</div>
+                        <div class="badge badge-outline">python</div>
+                        <div class="badge badge-outline">c++</div>
+                        <div class="badge badge-outline">java</div>
+                        <div class="badge badge-outline">typescript</div>
+                        <div class="badge badge-outline">sql</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+                class="card bg-base-100 image-full w-96 shadow-sm transform transition duration-500 hover:scale-105 hover:border-2 hover:border-primary">
+
+                <figure>
+                    <img src="/frontend-developer-typographic-header-website-interface-design-improvement-web-page-programming-coding-testing-it-profession-isolated-flat-vector-illustration_613284-304.avif"
+                        alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">🎨
+                        Frontend Development</h2>
+                    <p>Creating responsive, interactive, and performant user interfaces with modern frameworks
+
+                    </p>
+                    <div class="card-actions justify-center">
+                        <div class="badge badge-outline">html</div>
+                        <div class="badge badge-outline">css</div>
+                        <div class="badge badge-outline">nextjs</div>
+                        <div class="badge badge-outline">react</div>
+                        <div class="badge badge-outline">tailwind</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-5">
+        <nav class="grid grid-flow-col gap-4">
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Contact</a>
+            <a class="link link-hover">Jobs</a>
+            <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+            <div class="grid grid-flow-col gap-4">
+                <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current hover:scale-150 transition duration-500">
+                        <path
+                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                        </path>
+                    </svg>
+                </a>
+                <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current hover:scale-150 transition duration-500">
+                        <path
+                            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                        </path>
+                    </svg>
+                </a>
+                <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current hover:scale-150 transition duration-500">
+                        <path
+                            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+        </nav>
+        <aside>
+            <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
+        </aside>
+    </footer>
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>
